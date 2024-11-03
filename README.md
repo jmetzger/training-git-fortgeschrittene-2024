@@ -7,8 +7,6 @@
     
   1. pycharm
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
-     
-  1. pycharm 
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
      
   1. Commands (with tipps & tricks) 
