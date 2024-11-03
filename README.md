@@ -4,6 +4,9 @@
 
   1. Geschichte / Grundlagen 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
+
+  1. Basics - pycharm
+     * [Put project under version control](pycharm/basics/01-put-project-under-version-control.md)
     
   1. pycharm
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
