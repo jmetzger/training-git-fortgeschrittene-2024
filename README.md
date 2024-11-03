@@ -47,9 +47,6 @@
      * [SETUP.sql zu setup.sql in Windows (Groß- und Kleinschreibung)](setup-SETUP_sql.md)
      * [Force specfic commit message](pre-receive-hook.md)
      * [Alle Dateien, die sich geändert haben anzeigen z.B. heute](files-changed-today.md)
-      
-  1. Tipps & Tricks (Aufräumen) 
-     * [Tracking Branches (shadow branches) nach Integration Online löschen](remote-branches-delete.md)
   
   1. Exercises 
      * [merge feature/4712 - conflict](merge-conflict.md)
@@ -100,6 +97,9 @@
   1. Installation 
      * [GIT auf Ubuntu/Debian installieren](installation-ubuntu-debian.md)
      * [GIT unter Windows installieren](https://git-scm.com/download/win)
+    
+  1. Tipps & Tricks (Aufräumen) 
+     * [Tracking Branches (shadow branches) nach Integration Online löschen](remote-branches-delete.md)
   
   1. Tipps & Tricks (editor) 
      * [Notepad als Editor verwenden- Windows](notepad-git.md)
