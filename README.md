@@ -17,7 +17,7 @@
      * [Merge branch into main](pycharm/merging/01-merge-branch-into-main.md)
     
   1. Logs - pycharm
-     * [Add commit-id to logs in pycharm](pycharm/logs/add-commit-id-to-log.md)
+     * [Add commit-id to logs in pycharm](pycharm/logs/show-commit-id-in-logs.md)
      * [Show reflog](pycharm/logs/show-reflog.md)
    
   1. Tipps & Tricks - pycharm
