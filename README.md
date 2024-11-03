@@ -6,7 +6,7 @@
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
     
   1. pycharm
-     * [Which files to put under version control / which to ignore](pycharm/(which-files-to-ignore-files,md)
+     * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
      
   1. pycharm 
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
