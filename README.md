@@ -21,9 +21,8 @@
      * [Show reflog](pycharm/logs/show-reflog.md)
 
   1. Interaction with Online (codecommit)
-     * [Create Repo in codecommit](pycharm/online/create-repo-aws.md)
-     * [Publish Project to codecommit]()
-   
+     * [Publish Project to codecommit](pycharm/online/create-repo-codecommit.md)   
+  
   1. Tipps & Tricks - pycharm
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
