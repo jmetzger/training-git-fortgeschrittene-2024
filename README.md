@@ -1,4 +1,4 @@
-# GIT-Training 
+# GIT-Training mit Pycharm (Starter)
 
 ## Agenda 
 
