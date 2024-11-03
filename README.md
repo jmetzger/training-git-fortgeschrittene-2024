@@ -10,6 +10,9 @@
      * [Add unversionend files and commit](pycharm/basics/02-add-files-to-repo-and-commit.md)
      * [Branch erstellen](pycharm/basics/03-branch-erstellen.md)
     
+  1. Merging - pycharm
+     * [Merge branch into main](pycharm/merging/01-merge-branch-into-main.md)
+    
   1. Tipps & Tricks - pycharm
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
