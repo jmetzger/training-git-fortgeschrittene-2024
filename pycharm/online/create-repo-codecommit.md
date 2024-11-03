@@ -10,9 +10,20 @@
 
 ![image](https://github.com/user-attachments/assets/3010511d-f5fe-42f5-9086-1747d2b86f40)
 
-  * Click on "URL klonen" -> HTTPS
+  * Click on "URL klonen" -> HTTPS clonen
 
 ![image](https://github.com/user-attachments/assets/a29cc874-b666-409a-9854-70d7833b9afd)
 
+  * URL will be copied to clipboard
+
+## Step 2: Rewrite url and use for pushing in PyCharm 
+
+```
+# Put url in editor and replace https:// with codecommit://
+# e.g.
+https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMetzger
+# rewrite to:
+codecommit://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMetzger
+```
 
 
