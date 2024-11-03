@@ -13,7 +13,7 @@
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
      
-  1. Commands (with tipps & tricks) 
+  1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](add.md)
      * [git commit](commit.md)
      * [git log](log.md)
@@ -46,11 +46,7 @@
      * [SETUP.sql zu setup.sql in Windows (Groß- und Kleinschreibung)](setup-SETUP_sql.md)
      * [Force specfic commit message](pre-receive-hook.md)
      * [Alle Dateien, die sich geändert haben anzeigen z.B. heute](files-changed-today.md)
-  
-  1. Tipps & Tricks (editor) 
-     * [Notepad als Editor verwenden- Windows](notepad-git.md)
-     * [TextEdit als Editor unter mac verwenden](textedit-git.md)
-     
+      
   1. Tipps & Tricks (Aufräumen) 
      * [Tracking Branches (shadow branches) nach Integration Online löschen](remote-branches-delete.md)
   
@@ -104,3 +100,7 @@
      * [GIT auf Ubuntu/Debian installieren](installation-ubuntu-debian.md)
      * [GIT unter Windows installieren](https://git-scm.com/download/win)
   
+  1. Tipps & Tricks (editor) 
+     * [Notepad als Editor verwenden- Windows](notepad-git.md)
+     * [TextEdit als Editor unter mac verwenden](textedit-git.md)
+ 
