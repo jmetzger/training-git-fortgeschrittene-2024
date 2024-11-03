@@ -16,21 +16,35 @@
 
   * URL will be copied to clipboard
 
-## Step 2: Rewrite url and use for pushing in PyCharm 
+## Step 2: Reconnect to aws (if you have not been there for a while = token expired) 
 
 ```
-# Put url in editor and replace https:// with codecommit://
+# in the terminal 
+aws sso login --sso-session my-sso
+```
+
+## Step 3: Rewrite url and use for pushing in PyCharm 
+
+  * You must have a profile setup, in my case it is: Git_Schulung, because my profile looks like this:
+
+![image](https://github.com/user-attachments/assets/6033ec22-62e4-4a7b-8cef-fc4ee71c1475)
+
+```
+# Put url in editor and rewrite it as follows:
 # e.g.
 https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMetzger
-# rewrite to:
-codecommit://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMetzger
+# rewrite to: (Git_schuluung is your profile)
+codecommit://Git_Schulung@git-schulung_JochenMetzger
 ```
+
 ![image](https://github.com/user-attachments/assets/481e9dbe-1223-4625-8d00-6243be7aa120)
 
   * Click on Define Remote
 
 ![image](https://github.com/user-attachments/assets/64ae2b01-dca5-4328-b483-a1c564813ff6)
 
-![image](https://github.com/user-attachments/assets/a66397dd-eb7e-4642-be81-c29e55ddbd9e)
+![image](https://github.com/user-attachments/assets/6ab7cd3b-f327-476a-aec1-7022d56fd638)
 
-  * Press "OK" 
+  * Press "OK" and Pycharm shows what to push -> now press Push
+
+
