@@ -19,6 +19,9 @@
   1. Logs - pycharm
      * [Add commit-id to logs in pycharm](pycharm/logs/show-commit-id-in-logs.md)
      * [Show reflog](pycharm/logs/show-reflog.md)
+
+  !. Push/Publish 
+     * [Publish Project to codecommit]()
    
   1. Tipps & Tricks - pycharm
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
