@@ -7,8 +7,9 @@
 
   1. Basics - pycharm
      * [Put project under version control](pycharm/basics/01-put-project-under-version-control.md)
+     * [Add unversionend files and commit](pycharm/basics/02-add-files-to-repo-and-commit.md)
     
-  1. pycharm
+  1. Tipps & Tricks - pycharm
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
      
