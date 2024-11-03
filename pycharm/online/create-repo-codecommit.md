@@ -25,5 +25,12 @@ https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMe
 # rewrite to:
 codecommit://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMetzger
 ```
+![image](https://github.com/user-attachments/assets/481e9dbe-1223-4625-8d00-6243be7aa120)
 
+  * Click on Define Remote
 
+![image](https://github.com/user-attachments/assets/64ae2b01-dca5-4328-b483-a1c564813ff6)
+
+![image](https://github.com/user-attachments/assets/a66397dd-eb7e-4642-be81-c29e55ddbd9e)
+
+  * Press "OK" 
