@@ -14,6 +14,7 @@
      * [Merge branch into main](pycharm/merging/01-merge-branch-into-main.md)
     
   1. Tipps & Tricks - pycharm
+     * [Add commit-id to logs in pycharm](pycharm/tipps-tricks/add-commit-id-to-log.md)
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
      
