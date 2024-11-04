@@ -5,6 +5,9 @@
   1. Geschichte / Grundlagen 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
 
+  1. Best practices
+     * [Best practices](best-practices.md)
+
   1. Basics - pycharm
      * [Put project under version control](pycharm/basics/01-put-project-under-version-control.md)
      * [Add unversionend files and commit](pycharm/basics/02-add-files-to-repo-and-commit.md)
