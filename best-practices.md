@@ -23,6 +23,12 @@
     * nur eine Ebene feature-branches
   * Alle Branches, die integriert worden sind, löschen (Feng Shui)
 
+### Branchwechsel 
+
+   * Vor Branchwechsel, sollte mein Branch sauber sein
+
+![image](https://github.com/user-attachments/assets/a07d839e-5914-4b6c-8991-548e8367669e)
+
 ### Thema: no-ff 
 
   * Besser: no-ff als fast-forward (wird aber online ohnehin automatisch gemacht)
