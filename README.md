@@ -29,6 +29,9 @@
   1. Tipps & Tricks - pycharm
      * [Which files to put under version control / which to ignore](pycharm/which-files-to-ignore-files.md)
      * [Disable ESC when using vi as editor](pycharm/disable-esc.md)
+    
+  1. Workflows
+     * [git workflows](git-workflows.md)
      
   1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](add.md)
