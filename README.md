@@ -32,7 +32,12 @@
     
   1. Workflows
      * [git workflows](git-workflows.md)
-     
+    
+  1. Background
+     * [Why use tags](why-tags.md)
+
+## Backlog 
+
   1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](add.md)
      * [git commit](commit.md)
@@ -109,9 +114,7 @@
      
   1. Datenbank - Versionierung 
      * [Methode 1](https://github.com/sergiosbx/pyway)
-     * [Methode 2](https://flywaydb.org/)
-
-## Backlog  
+     * [Methode 2](https://flywaydb.org/) 
 
   1. Installation 
      * [GIT auf Ubuntu/Debian installieren](installation-ubuntu-debian.md)
