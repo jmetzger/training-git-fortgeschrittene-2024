@@ -1,14 +1,39 @@
-# GIT-Training 
+# GIT-Training mit Pycharm (Starter)
 
 
 ## Agenda
   1. Geschichte / Grundlagen 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
-     
-  1. pycharm 
+
+  1. Best practices
+     * [Best practices](#best-practices)
+
+  1. Basics - pycharm
+     * [Put project under version control](#put-project-under-version-control)
+     * [Add unversionend files and commit](#add-unversionend-files-and-commit)
+     * [Branch erstellen](#branch-erstellen)
+    
+  1. Commit "rückgängig" machen
+     * [Die letzte Commit-Nachricht ändern](#die-letzte-commit-nachricht-ändern)
+    
+  1. Merging - pycharm
+     * [Merge branch into main](#merge-branch-into-main)
+    
+  1. Logs - pycharm
+     * [Add commit-id to logs in pycharm](#add-commit-id-to-logs-in-pycharm)
+     * [Show reflog](#show-reflog)
+
+  1. Interaction with Online (codecommit)
+     * [Publish Project to codecommit](#publish-project-to-codecommit)
+  
+  1. Tipps & Tricks - pycharm
+     * [Which files to put under version control / which to ignore](#which-files-to-put-under-version-control--which-to-ignore)
      * [Disable ESC when using vi as editor](#disable-esc-when-using-vi-as-editor)
+    
+  1. Workflows
+     * [git workflows](#git-workflows)
      
-  1. Commands (with tipps & tricks) 
+  1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](#git-add-+-tipps--tricks)
      * [git commit](#git-commit)
      * [git log](#git-log)
@@ -41,13 +66,6 @@
      * [SETUP.sql zu setup.sql in Windows (Groß- und Kleinschreibung)](#setupsql-zu-setupsql-in-windows-groß--und-kleinschreibung)
      * [Force specfic commit message](#force-specfic-commit-message)
      * [Alle Dateien, die sich geändert haben anzeigen z.B. heute](#alle-dateien-die-sich-geändert-haben-anzeigen-zb-heute)
-  
-  1. Tipps & Tricks (editor) 
-     * [Notepad als Editor verwenden- Windows](#notepad-als-editor-verwenden--windows)
-     * [TextEdit als Editor unter mac verwenden](#textedit-als-editor-unter-mac-verwenden)
-     
-  1. Tipps & Tricks (Aufräumen) 
-     * [Tracking Branches (shadow branches) nach Integration Online löschen](#tracking-branches-shadow-branches-nach-integration-online-löschen)
   
   1. Exercises 
      * [merge feature/4712 - conflict](#merge-feature4712---conflict)
@@ -98,7 +116,14 @@
   1. Installation 
      * [GIT auf Ubuntu/Debian installieren](#git-auf-ubuntudebian-installieren)
      * [GIT unter Windows installieren](https://git-scm.com/download/win)
+    
+  1. Tipps & Tricks (Aufräumen) 
+     * [Tracking Branches (shadow branches) nach Integration Online löschen](#tracking-branches-shadow-branches-nach-integration-online-löschen)
   
+  1. Tipps & Tricks (editor) 
+     * [Notepad als Editor verwenden- Windows](#notepad-als-editor-verwenden--windows)
+     * [TextEdit als Editor unter mac verwenden](#textedit-als-editor-unter-mac-verwenden)
+ 
 
 <div class="page-break"></div>
 
@@ -108,14 +133,274 @@
 
   * http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf
 
-## pycharm 
+## Best practices
+
+### Best practices
+
+
+### Repos anlegen 
+
+ * Kein git init sondern Versionsverwaltung über pycharm
+
+### Commits 
+
+ * Zeile 1: 50 Zeichen
+ * Bestehend aus [Ticket-ID oder Modul/Bereich] Kurztitel
+ * Sollte so sein, dass die Kollegen das verstehen
+ * Evtl. ab Zeile 3 weitere Bemerkungen (eher selten) 
+
+#### Wie oft ?
+
+  * Häufig committen, wenig pushen (z.B durchaus 10-15 commits und 1-2 pushen)
+
+### Branches 
+
+#### Allgemein 
+
+  * Nicht zuviele Unterbranches erstellen
+    * nur eine Ebene feature-branches
+  * Alle Branches, die integriert worden sind, löschen (Feng Shui)
+
+#### Branchwechsel 
+
+   * Vor Branchwechsel, sollte mein Branch sauber sein
+
+![image](https://github.com/user-attachments/assets/a07d839e-5914-4b6c-8991-548e8367669e)
+
+#### Thema: no-ff 
+
+  * Besser: no-ff als fast-forward (wird aber online ohnehin automatisch gemacht)
+    * Warum: Damit wir sehen, was in ein Feature integriert wurde (welche commits)
+ 
+#### Wann ? 
+
+  * Immer Branches verwenden, wenn mehr als 2 Leute im Team
+
+#### Benamung ?
+
+   * feature/xxxx - wobei xxxx (Ticket-Id oder Kurzbezeichnung) ist 
+
+### Reset / amend (kommandos, die die Historie verändern
+
+  * Nicht mehr für commits machen, die veröffentlicht wurden (ge-pushed zum Server)
+
+## Basics - pycharm
+
+### Put project under version control
+
+
+### Version 1: Use Share-Project 
+
+#### Use share - menu item 
+
+![image](https://github.com/user-attachments/assets/041f6573-95fe-4c5d-aa86-8c7f93e986ee)
+
+### Go ahead with o.k. 
+
+  * Simply press o.k.
+
+![image](https://github.com/user-attachments/assets/3f6ba137-0c4a-4c21-b297-7fad11e5a903)
+
+### Where is it stored ? 
+
+  * Let's look into the explorer, it has now create a new subfolder .git
+
+![image](https://github.com/user-attachments/assets/3548bf11-a9de-4281-a755-dc7804193206)
+![image](https://github.com/user-attachments/assets/be034b55-e990-43fe-80c0-549887bccbba)
+
+### Version 2: 
+
+#### Create git - repository 
+
+![image](https://github.com/user-attachments/assets/050df738-13ae-4cc4-a4ee-e238384ab74f)
+
+#### Decide which folder (Best Option: Use the same folder as project)
+
+![image](https://github.com/user-attachments/assets/5b153f7c-9c62-4eba-a7d9-5c996f9e5c5f)
+
+  * AND press o.k.
+
+
+### Add unversionend files and commit
+
+
+### Step 1: see what files are unversioned  
+
+![image](https://github.com/user-attachments/assets/b295bfed-bb48-4e01-93d1-ab1413e78746)
+
+### Step 2: click on unversioned files 
+
+![image](https://github.com/user-attachments/assets/6e61061d-f4f4-4d2e-8a86-d2e1c1fa3233)
+
+### Step 3: Add commit message + press commit 
+
+![image](https://github.com/user-attachments/assets/b1252040-2eb6-4eee-aa35-ee5455043ced)
+![image](https://github.com/user-attachments/assets/721c62e1-4696-468b-898d-b2ad820ba4f0)
+
+
+
+### Branch erstellen
+
+
+  * Branch wird auf Basis des aktuellen Commits erstellt.
+
+![image](https://github.com/user-attachments/assets/759cd949-02a6-4ef9-b92b-ade327eb9cab)
+
+![image](https://github.com/user-attachments/assets/87643b79-de06-4423-88da-fd3ca4f4002b)
+
+  * Checkout branch (please keep checked)
+  * Press "Create Branch" 
+
+## Commit "rückgängig" machen
+
+### Die letzte Commit-Nachricht ändern
+
+
+![image](https://github.com/user-attachments/assets/a03d5b20-ff25-48d3-a99f-181e00873b74)
+
+  * Simply check "Amend" and cheange your commit accordingly
+
+![image](https://github.com/user-attachments/assets/067143f0-f40d-4edc-a803-f9cf019665e0)
+
+  * Press "Amend Commit"
+  * Now you can see 1. a new commit-id and 2. the changed commit-message 
+
+![image](https://github.com/user-attachments/assets/c64837c6-8b41-4bc9-9d01-a5c544017f39)
+
+
+
+
+
+## Merging - pycharm
+
+### Merge branch into main
+
+
+  * We want a change we made in feature/4711 to merge into main 
+
+### Step 1: Change branch back to main
+
+![image](https://github.com/user-attachments/assets/0dcc5b80-bf03-4d4e-843a-abf18a2c49d0)
+
+### Step 2: merge feature/4711 into main 
+
+![image](https://github.com/user-attachments/assets/9ef62a5f-06dc-4456-b191-5bfd55e7271c)
+
+  * or from the git - menu (left side - nearly at bottom)
+
+![image](https://github.com/user-attachments/assets/3e286b0d-d87b-47c6-95cc-d69486a8c00a)
+
+
+## Logs - pycharm
+
+### Add commit-id to logs in pycharm
+
+
+![image](https://github.com/user-attachments/assets/de754a3e-f526-4401-b8e8-fffd0f07e567)
+
+  * Set checkbox next to 'Hash'
+
+![image](https://github.com/user-attachments/assets/b99b3932-48e8-45ed-a719-66568b225ed4)
+
+### Show reflog
+
+
+  * reflog is not available in pycharm, so we need to use it on the commandline
+
+![image](https://github.com/user-attachments/assets/38228c9f-68c9-4ada-9173-936d359e2070)
+![image](https://github.com/user-attachments/assets/a0173b67-dce6-4d07-ad58-0238a0981943)
+
+## Interaction with Online (codecommit)
+
+### Publish Project to codecommit
+
+
+### Step 1: Create Repo in code-commit 
+
+![image](https://github.com/user-attachments/assets/56799e0b-bf73-4080-8d3e-c084e35bc649)
+
+![image](https://github.com/user-attachments/assets/4dc3b110-0cff-4c3d-a4e5-9a3e45479525)
+
+  * Finally: Click on "Erstellen"
+
+![image](https://github.com/user-attachments/assets/3010511d-f5fe-42f5-9086-1747d2b86f40)
+
+  * Click on "URL klonen" -> HTTPS clonen
+
+![image](https://github.com/user-attachments/assets/a29cc874-b666-409a-9854-70d7833b9afd)
+
+  * URL will be copied to clipboard
+
+### Step 2: Reconnect to aws (if you have not been there for a while = token expired) 
+
+```
+## in the terminal 
+aws sso login --sso-session my-sso
+```
+
+### Step 3: Rewrite url and use for pushing in PyCharm 
+
+  * You must have a profile setup, in my case it is: Git_Schulung, because my profile looks like this:
+
+![image](https://github.com/user-attachments/assets/6033ec22-62e4-4a7b-8cef-fc4ee71c1475)
+
+```
+## Put url in editor and rewrite it as follows:
+## e.g.
+https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMetzger
+## rewrite to: (Git_schuluung is your profile)
+codecommit://Git_Schulung@git-schulung_JochenMetzger
+```
+
+![image](https://github.com/user-attachments/assets/481e9dbe-1223-4625-8d00-6243be7aa120)
+
+  * Click on Define Remote
+
+![image](https://github.com/user-attachments/assets/64ae2b01-dca5-4328-b483-a1c564813ff6)
+
+![image](https://github.com/user-attachments/assets/6ab7cd3b-f327-476a-aec1-7022d56fd638)
+
+  * Press "OK" and Pycharm shows what to push -> now press Push
+
+
+
+## Tipps & Tricks - pycharm
+
+### Which files to put under version control / which to ignore
+
+
+  * You need to exclude personal files/settings
+  * In general pycharm do this perfectly for you
+
+### Reference: 
+
+  * https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
 
 ### Disable ESC when using vi as editor
 
 
   * https://intellij-support.jetbrains.com/hc/en-us/community/posts/360003508579-How-to-stop-Escape-from-Leaving-Terminal
 
-## Commands (with tipps & tricks) 
+## Workflows
+
+### git workflows
+
+
+### Centralized Workflow 
+
+![image](https://github.com/jmetzger/training-git-intellij/assets/1933318/7fd1d0dc-1af7-4280-8e61-5201dfb9caaf)
+
+
+### Feature Workflow 
+
+![image](https://github.com/jmetzger/training-git-intellij/assets/1933318/6858a34c-e765-4e72-bb1d-b2eee7255119)
+
+### gitflow workflow 
+
+![image](https://github.com/jmetzger/training-git-intellij/assets/1933318/7a7b7a97-fa58-4f25-92c8-8a4d8a52bb84)
+
+
+## Kommandzeile (mit tipps & tricks) 
 
 ### git add + Tipps & Tricks
 
@@ -129,7 +414,8 @@ git add .
 
 ### Fix -A 
 ## adds everything no matter in which folder you are in your project 
-git add -A 
+git add -A
+
 ```
 
 ### git commit
@@ -725,42 +1011,6 @@ for i in $(git log --after="2022-09-26" --before="2022-09-27" --pretty=format:""
 git log --after="2022-09-26" --before="2022-09-27" --pretty=format:"" --follow -p -- todo.txt
 ```
 
-## Tipps & Tricks (editor) 
-
-### Notepad als Editor verwenden- Windows
-
-
-```
-git config --global core.editor notepad 
-
-
-```
-
-### TextEdit als Editor unter mac verwenden
-
-
-```
-git config --global core.editor "open -W -n"
-```
-
-## Tipps & Tricks (Aufräumen) 
-
-### Tracking Branches (shadow branches) nach Integration Online löschen
-
-
-```
-git checkout master 
-git pull --rebase origin master 
-
-## Davor: Online branch (neuer feature-branch löschen) 
-## Löscht Schattenbranch 
-git fetch --prune 
-
-## Und lokaler branch löschen 
-git branch -d feature/mein-feature-branch 
-
-```
-
 ## Exercises 
 
 ### merge feature/4712 - conflict
@@ -843,7 +1093,7 @@ git pull --rebase
 git push
 Password for 'https://erding2017@bitbucket.org':
 To https://bitbucket.org/erding2017/git-remote-jochen.git
- ! [rejected](fetch first)
+ ! [rejected]        master -> master (fetch first)
 error: failed to push some refs to 'https://erding2017@bitbucket.org/erding2017/git-remote-jochen.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
@@ -869,7 +1119,7 @@ git push
 git push
 Password for 'https://erding2017@bitbucket.org':
 To https://bitbucket.org/erding2017/git-remote-jochen.git
- ! [rejected](fetch first)
+ ! [rejected]        master -> master (fetch first)
 ....
 ## Step 2: Integrate changes from online 
 git pull
@@ -1165,3 +1415,39 @@ LANG=en_US.UTF-8
 ### GIT unter Windows installieren
 
   * https://git-scm.com/download/win
+
+## Tipps & Tricks (Aufräumen) 
+
+### Tracking Branches (shadow branches) nach Integration Online löschen
+
+
+```
+git checkout master 
+git pull --rebase origin master 
+
+## Davor: Online branch (neuer feature-branch löschen) 
+## Löscht Schattenbranch 
+git fetch --prune 
+
+## Und lokaler branch löschen 
+git branch -d feature/mein-feature-branch 
+
+```
+
+## Tipps & Tricks (editor) 
+
+### Notepad als Editor verwenden- Windows
+
+
+```
+git config --global core.editor notepad 
+
+
+```
+
+### TextEdit als Editor unter mac verwenden
+
+
+```
+git config --global core.editor "open -W -n"
+```
