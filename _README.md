@@ -32,7 +32,12 @@
     
   1. Workflows
      * [git workflows](#git-workflows)
-     
+    
+  1. Background
+     * [Why use tags](#why-use-tags)
+
+## Backlog 
+
   1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](#git-add-+-tipps--tricks)
      * [git commit](#git-commit)
@@ -110,8 +115,6 @@
   1. Datenbank - Versionierung 
      * [Methode 1](https://github.com/sergiosbx/pyway)
      * [Methode 2](https://flywaydb.org/)
-
-## Backlog  
 
   1. Installation 
      * [GIT auf Ubuntu/Debian installieren](#git-auf-ubuntudebian-installieren)
@@ -399,6 +402,17 @@ codecommit://Git_Schulung@git-schulung_JochenMetzger
 
 ![image](https://github.com/jmetzger/training-git-intellij/assets/1933318/7a7b7a97-fa58-4f25-92c8-8a4d8a52bb84)
 
+
+## Background
+
+### Why use tags
+
+
+  * Set historical points
+  * Mark stable version
+  * Mark achievements
+
+![image](https://github.com/user-attachments/assets/47b538cd-ba32-42ca-b63f-9e9d40c83c39)
 
 ## Kommandzeile (mit tipps & tricks) 
 
