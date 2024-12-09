@@ -11,3 +11,9 @@ git config --global --list
 git config --unset --global alias.log
 ```
 
+## Set entry only for repo 
+
+```
+# Eintrag nur für repo setzen
+git config user.name "mein-name-nur-fuer-repo" 
+```
