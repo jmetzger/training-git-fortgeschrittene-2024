@@ -1,6 +1,6 @@
 # Use pycharm as mergetool withing pycharm 
 
-## Setup 
+## Setup (Windows)
 
 ```
 # Welche sind konfiguriert
