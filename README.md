@@ -34,9 +34,10 @@
     
   1. Background
      * [Why use tags](why-tags.md)
-
-## Backlog 
-
+    
+  1. Tipps & tricks 
+     * [Beautified log](beautify-log.md)
+    
   1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](add.md)
      * [git commit](commit.md)
@@ -50,6 +51,8 @@
      * [git tag](tag.md)
      * [git push/pull](push-pull.md)
      * [git reset](reset.md)
+
+## Backlog 
    
   1. Branches / Branching 
      * [Branch Overview with origin image](branches/overview.md)
@@ -57,9 +60,8 @@
   1. Advanced Commands 
      * [git reflog](reflog.md) 
      * [git reset - Back in Time](reset.md)   
-     
-  1. Tipps & tricks 
-     * [Beautified log](beautify-log.md)
+
+  1. Tipps & Tricks 
      * [Change already committed files and message](commit-amend.md) 
      * [Best practice - Delete origin,tracking and local branch after pull request/merge request](best-practice-delete-branch.md)
      * [Einzelne Datei auschecken](einzelne-datei-auschecken.md)
