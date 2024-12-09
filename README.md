@@ -11,13 +11,9 @@
   1. Basics - pycharm
      * [Put project under version control](pycharm/basics/01-put-project-under-version-control.md)
      * [Add unversionend files and commit](pycharm/basics/02b-add-files-to-repo-and-commit.md)
-     * [Branch erstellen](pycharm/basics/03-branch-erstellen.md)
     
   1. Commit "rückgängig" machen
      * [Die letzte Commit-Nachricht ändern](pycharm/modify-commit/amend.md)
-    
-  1. Merging - pycharm
-     * [Merge branch into main](pycharm/merging/01-merge-branch-into-main.md)
     
   1. Logs - pycharm
      * [Add commit-id to logs in pycharm](pycharm/logs/show-commit-id-in-logs.md)
