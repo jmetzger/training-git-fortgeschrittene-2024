@@ -1,9 +1,12 @@
 # GIT-Training mit Pycharm (Starter)
 
-## Agenda 
+## Agenda
 
   1. Geschichte / Grundlagen 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
+
+  1. Cheatsheet / Spickzettel
+     * [Git Cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
 
   1. Best practices
      * [Best practices](best-practices.md)
