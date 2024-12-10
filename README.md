@@ -1,4 +1,4 @@
-# GIT-Training mit Pycharm (Starter)
+# GIT-Training für Fortgeschrittene 2024
 
 ## Agenda
 
