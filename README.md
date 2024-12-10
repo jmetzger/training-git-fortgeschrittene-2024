@@ -53,6 +53,10 @@
      * [git tag](tag.md)
      * [git push/pull](push-pull.md)
      * [git reset](reset.md)
+    
+  1. Security
+     * [Push Protection - scanning for hardcoded credentials](https://blog.gitguardian.com/github-push-protection-enhancing-open-source-security-with-limitations-to-consider/)
+     * [Enable Push Protection](https://docs.github.com/en/code-security/secret-scanning/enabling-secret-scanning-features/enabling-push-protection-for-your-repository)
 
 ## Backlog 
    
