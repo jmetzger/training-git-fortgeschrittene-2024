@@ -58,6 +58,9 @@
   1. Security
      * [Push Protection - scanning for hardcoded credentials](https://blog.gitguardian.com/github-push-protection-enhancing-open-source-security-with-limitations-to-consider/)
      * [Enable Push Protection](https://docs.github.com/en/code-security/secret-scanning/enabling-secret-scanning-features/enabling-push-protection-for-your-repository)
+    
+  1. hooks
+     * [Git Hooks - Clientseitig](https://git-scm.com/book/de/v2/Git-einrichten-Git-Hooks)
 
 ## Backlog 
    
