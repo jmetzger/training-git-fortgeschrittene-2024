@@ -37,6 +37,7 @@
     
   1. Tipps & tricks 
      * [Beautified log](beautify-log.md)
+     * [Datei aus altem commit bekommen](einzelne-datei-auschecken.md)
     
   1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](add.md)
