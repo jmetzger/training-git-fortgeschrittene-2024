@@ -1,9 +1,13 @@
-# GIT-Training mit Pycharm (Starter)
+# GIT-Training für Fortgeschrittene 2024
 
 
 ## Agenda
   1. Geschichte / Grundlagen 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
+
+  1. Cheatsheet / Spickzettel / cool stuff
+     * [Git Cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+     * [Git cool commands](https://github.com/git-tips/tips?tab=readme-ov-file#list-all-the-conflicted-files)
 
   1. Best practices
      * [Best practices](#best-practices)
@@ -11,13 +15,9 @@
   1. Basics - pycharm
      * [Put project under version control](#put-project-under-version-control)
      * [Add unversionend files and commit](#add-unversionend-files-and-commit)
-     * [Branch erstellen](#branch-erstellen)
     
   1. Commit "rückgängig" machen
      * [Die letzte Commit-Nachricht ändern](#die-letzte-commit-nachricht-ändern)
-    
-  1. Merging - pycharm
-     * [Merge branch into main](#merge-branch-into-main)
     
   1. Logs - pycharm
      * [Add commit-id to logs in pycharm](#add-commit-id-to-logs-in-pycharm)
@@ -35,9 +35,12 @@
     
   1. Background
      * [Why use tags](#why-use-tags)
-
-## Backlog 
-
+    
+  1. Tipps & tricks 
+     * [Beautified log](#beautified-log)
+     * [Datei aus altem commit bekommen](#datei-aus-altem-commit-bekommen)
+     * [Special config settings](#special-config-settings)
+    
   1. Kommandzeile (mit tipps & tricks) 
      * [git add + Tipps & Tricks](#git-add-+-tipps--tricks)
      * [git commit](#git-commit)
@@ -51,6 +54,12 @@
      * [git tag](#git-tag)
      * [git push/pull](#git-pushpull)
      * [git reset](#git-reset)
+    
+  1. Security
+     * [Push Protection - scanning for hardcoded credentials](https://blog.gitguardian.com/github-push-protection-enhancing-open-source-security-with-limitations-to-consider/)
+     * [Enable Push Protection](https://docs.github.com/en/code-security/secret-scanning/enabling-secret-scanning-features/enabling-push-protection-for-your-repository)
+
+## Backlog 
    
   1. Branches / Branching 
      * [Branch Overview with origin image](#branch-overview-with-origin-image)
@@ -58,9 +67,8 @@
   1. Advanced Commands 
      * [git reflog](#git-reflog)
      * [git reset - Back in Time](#git-reset---back-in-time)
-     
-  1. Tipps & tricks 
-     * [Beautified log](#beautified-log)
+
+  1. Tipps & Tricks 
      * [Change already committed files and message](#change-already-committed-files-and-message)
      * [Best practice - Delete origin,tracking and local branch after pull request/merge request](#best-practice---delete-origintracking-and-local-branch-after-pull-requestmerge-request)
      * [Einzelne Datei auschecken](#einzelne-datei-auschecken)
@@ -135,6 +143,16 @@
 ### GIT Pdf
 
   * http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf
+
+## Cheatsheet / Spickzettel / cool stuff
+
+### Git Cheatsheet
+
+  * https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+
+### Git cool commands
+
+  * https://github.com/git-tips/tips?tab=readme-ov-file#list-all-the-conflicted-files
 
 ## Best practices
 
@@ -227,32 +245,18 @@
 ### Add unversionend files and commit
 
 
-### Step 1: see what files are unversioned  
+  * Bester Weg: Starte mit einer top-level .gitignore in der Du den kompletten .idea - Ordner hinzufügst
 
-![image](https://github.com/user-attachments/assets/b295bfed-bb48-4e01-93d1-ab1413e78746)
+```
+## .gitignore 
+/.idea
+```
 
-### Step 2: click on unversioned files 
+  * Wichtig: .gitignore muss unbedingt am Anfang des Projekts geadded, committed und gepushed werden (falls man nicht mit einem Repo aus AWS Code Commit beginnt, sondern lokal)
 
-![image](https://github.com/user-attachments/assets/6e61061d-f4f4-4d2e-8a86-d2e1c1fa3233)
+### Hinweis 
 
-### Step 3: Add commit message + press commit 
-
-![image](https://github.com/user-attachments/assets/b1252040-2eb6-4eee-aa35-ee5455043ced)
-![image](https://github.com/user-attachments/assets/721c62e1-4696-468b-898d-b2ad820ba4f0)
-
-
-
-### Branch erstellen
-
-
-  * Branch wird auf Basis des aktuellen Commits erstellt.
-
-![image](https://github.com/user-attachments/assets/759cd949-02a6-4ef9-b92b-ade327eb9cab)
-
-![image](https://github.com/user-attachments/assets/87643b79-de06-4423-88da-fd3ca4f4002b)
-
-  * Checkout branch (please keep checked)
-  * Press "Create Branch" 
+  * Den Vorschlag von pycharm zu nehmen (der automatisch bei neuen Repos erstellt wird, ist suboptimal, weil hier Plugins, die man evtl. später verwendet / installiert nicht berücksichtigt werden. 
 
 ## Commit "rückgängig" machen
 
@@ -272,26 +276,6 @@
 
 
 
-
-
-## Merging - pycharm
-
-### Merge branch into main
-
-
-  * We want a change we made in feature/4711 to merge into main 
-
-### Step 1: Change branch back to main
-
-![image](https://github.com/user-attachments/assets/0dcc5b80-bf03-4d4e-843a-abf18a2c49d0)
-
-### Step 2: merge feature/4711 into main 
-
-![image](https://github.com/user-attachments/assets/9ef62a5f-06dc-4456-b191-5bfd55e7271c)
-
-  * or from the git - menu (left side - nearly at bottom)
-
-![image](https://github.com/user-attachments/assets/3e286b0d-d87b-47c6-95cc-d69486a8c00a)
 
 
 ## Logs - pycharm
@@ -414,6 +398,74 @@ codecommit://Git_Schulung@git-schulung_JochenMetzger
 
 ![image](https://github.com/user-attachments/assets/47b538cd-ba32-42ca-b63f-9e9d40c83c39)
 
+## Tipps & tricks 
+
+### Beautified log
+
+
+### Walkthrough 
+
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset \
+-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+
+```
+
+### PRETTY FORMATS
+
+  * all documented in git help log (section PRETTY FORMAT)
+  * https://git-scm.com/docs/git-log
+  
+
+### Datei aus altem commit bekommen
+
+
+### aus anderem Commit 
+
+```
+## aus commit 11ed 
+
+git checkout 11ed -- todo.txt
+## unterverzeichnis 
+git checkout 11ed -- tmp/test.txt 
+
+
+```
+
+### ...und direkt umbenennen 
+
+```
+## datei todo.txt aus 11ae -> Inhalt anzeigen und direkt neue datei umleiten 
+git show 11ae^:todo.txt > todoneu.txt
+```
+
+### Special config settings
+
+
+### Conditional Include 
+
+```
+The path parts are relative, which means relative to the file that includes them (${HOME}\.gitconfig), rather than relative to the repository they operate on.
+; relative paths are always relative to the including
+; file (if the condition is true); their location is not
+; affected by the condition
+[includeIf "gitdir:/path/to/group/"]
+        path = foo.inc
+
+; include only if we are in a worktree where foo-branch is
+; currently checked out
+[includeIf "onbranch:foo-branch"]
+        path = foo.inc
+```
+
+### Special settings for commit and merge 
+
+```
+commit.verbose=true: Shows the full diff being committed in the editor when writing a commit message.
+
+merge.conflictStyle=diff3: Adds an extra section in merge conflicts that shows the code as it looked in the common ancestor commit. It can be difficult to figure out the correct result of a merge without this.
+```
+
 ## Kommandzeile (mit tipps & tricks) 
 
 ### git add + Tipps & Tricks
@@ -500,6 +552,23 @@ git config --global --list
 git config --unset --global alias.log
 ```
 
+### Set entry only for repo 
+
+```
+## Eintrag nur für repo setzen
+git config user.name "mein-name-nur-fuer-repo" 
+```
+
+### Identität setzen 
+
+```
+git config --global user.name "Jochen Metzger"
+git config --global user.email "j.metzger@t3company.de"
+## Du musst in Deinem Repo sein, und für das gilt das 
+git config --list
+## Checking your config property:
+git config user.email
+```
 
 ### git show
 
@@ -691,6 +760,16 @@ git add myfile
 git reset --hard HEAD 
 ```
 
+## Security
+
+### Push Protection - scanning for hardcoded credentials
+
+  * https://blog.gitguardian.com/github-push-protection-enhancing-open-source-security-with-limitations-to-consider/
+
+### Enable Push Protection
+
+  * https://docs.github.com/en/code-security/secret-scanning/enabling-secret-scanning-features/enabling-push-protection-for-your-repository
+
 ## Branches / Branching 
 
 ### Branch Overview with origin image
@@ -749,27 +828,12 @@ git add myfile
 git reset --hard HEAD 
 ```
 
-## Tipps & tricks 
-
-### Beautified log
-
-
-### Walkthrough 
-
-```
-git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset \
--%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
-
-```
-
-### PRETTY FORMATS
-
-  * all documented in git help log (section PRETTY FORMAT)
-  * https://git-scm.com/docs/git-log
-  
+## Tipps & Tricks 
 
 ### Change already committed files and message
 
+
+### Mit Editor 
 
 ```
 ## Walkthrough 
@@ -782,6 +846,12 @@ touch README
 git add .
 git commit --amend # README will be in same commit as newfile.txt 
 ## + you can also changed the commit message 
+```
+
+### Ohne Editor 
+
+```
+git commit --amend  -m "meine neue message"
 ```
 
 ### Best practice - Delete origin,tracking and local branch after pull request/merge request
