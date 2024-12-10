@@ -5,8 +5,9 @@
   1. Geschichte / Grundlagen 
      * [GIT Pdf](http://schulung.t3isp.de/documents/pdfs/git/git-training.pdf)
 
-  1. Cheatsheet / Spickzettel
+  1. Cheatsheet / Spickzettel / cool stuff
      * [Git Cheatsheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+     * [Git cool commands](https://github.com/git-tips/tips?tab=readme-ov-file#list-all-the-conflicted-files)
 
   1. Best practices
      * [Best practices](best-practices.md)
