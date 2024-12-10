@@ -37,14 +37,10 @@ https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/git-schulung_JochenMe
 codecommit://Git_Schulung@git-schulung_JochenMetzger
 ```
 
-![image](https://github.com/user-attachments/assets/481e9dbe-1223-4625-8d00-6243be7aa120)
+```
+git remote add origin codecommit://Git_Schulung@git-schulung_JochenMetzger
+git push -u origin master
+```
 
-  * Click on Define Remote
-
-![image](https://github.com/user-attachments/assets/64ae2b01-dca5-4328-b483-a1c564813ff6)
-
-![image](https://github.com/user-attachments/assets/6ab7cd3b-f327-476a-aec1-7022d56fd638)
-
-  * Press "OK" and Pycharm shows what to push -> now press Push
 
 
